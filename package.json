@@ -9,14 +9,14 @@
     "dependencies": {
         "valid-url": "*"
     },
-    "homepage": "https://github.com/mallowlabs/gitbook-plugin-redirect-sub",
+    "homepage": "https://github.com/gcolliso/gitbook-plugin-redirect-sub",
     "repository": {
         "type": "git",
-        "url": "https://github.com/mallowlabs/gitbook-plugin-redirect-sub.git"
+        "url": "https://github.com/gcolliso/gitbook-plugin-redirect-sub.git"
     },
     "license": "Apache 2",
     "bugs": {
-        "url": "https://github.com/mallowlabs/gitbook-plugin-redirect-sub/issues"
+        "url": "https://github.com/gcolliso/gitbook-plugin-redirect-sub/issues"
     },
     "keywords": [
         "gitbook",
