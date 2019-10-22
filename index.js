@@ -28,7 +28,7 @@ module.exports = {
           '</p>\n' +
           '<script>window.location.href="' + path + '";</script>\n';
       };
-      var redirectPath = root + "/" + pagename;
+      var redirectPath = root;
       page.content = redirectPageContent(redirectPath) + page.content;
       return page;
     }
