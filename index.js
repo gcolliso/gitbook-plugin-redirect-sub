@@ -8,7 +8,7 @@ module.exports = {
       var path = require('path');
 
       var dirname = path.dirname(page.path);
-      var pagename = path.basename(page.rawPath).replace('docs/', '').replace('README.md', '').replace('md', 'html');
+      var pagename = path.basename(page.rawPath).replace('/docs/', '').replace('README.md', '').replace('md', 'html');
 
       if(!bookname){
         bookname = path.basename(page.rawPath.replace(page.path, ''));
