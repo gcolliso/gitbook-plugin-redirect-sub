@@ -17,7 +17,7 @@ module.exports = {
       var redirectPageContent = function(path){
         return '' +
           '<link rel="canonical" href="' +  path + '">\n' +
-          '<meta http-equiv=refresh content="0; url=' + encodeURI(path) + '">\n' +
+          '<meta http-equiv=refresh content="0; url=' + encodeURI(path).replace('/docs', '') + '">\n' +
           '<h1>Redirecting...</h1>\n' +
           '<p>\n' +
           '  This page has moved to \n' +
@@ -28,7 +28,7 @@ module.exports = {
           '</p>\n' +
           '<script>window.location.href="' + path + '";</script>\n';
       };
-      var redirectPath = root + "/" + pagename.replace('/docs', '');
+      var redirectPath = root + "/" + pagename;
       page.content = redirectPageContent(redirectPath) + page.content;
       return page;
     }
