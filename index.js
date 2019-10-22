@@ -28,7 +28,7 @@ module.exports = {
           '</p>\n' +
           '<script>window.location.href="' + path + '";</script>\n';
       };
-      var redirectPath = root + "/" + bookname + "/" + dirname + "/" + pagename;
+      var redirectPath = root + "/" + dirname + "/" + pagename;
       page.content = redirectPageContent(redirectPath) + page.content;
       return page;
     }
